@@ -1,0 +1,7 @@
+*.tfstate
+*.tfstate.backup
+.terraform/
+ec2key*
+ec2key.pub
+*.tfvars
+.terraform.lock.hcl
