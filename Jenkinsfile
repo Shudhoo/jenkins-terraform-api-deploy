@@ -8,7 +8,7 @@ pipeline {
     }
 
     stages {
-        stage('Clone TRepository') {
+        stage('Clone Repository') {
             steps {
                 deleteDir()
                 git branch: 'main', url: 'https://github.com/Shudhoo/jenkins-terraform-infrastructure-deploy.git'
