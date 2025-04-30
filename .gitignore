@@ -3,5 +3,5 @@
 .terraform/
 ec2key*
 ec2key.pub
-*.tfvars
+#*.tfvars
 .terraform.lock.hcl
