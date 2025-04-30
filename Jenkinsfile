@@ -17,12 +17,10 @@ pipeline {
 
         stage('Terraform Init') {
             steps {
-                script {
                     withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-crendentials-shudho', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                         sh 'echo =============================Terraform Init==================================='
                         sh 'terraform init'
                     }
-                }
             }
         }
 
